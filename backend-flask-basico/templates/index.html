@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula de Backend: Flask</title>
+  <!-- "url_for" gera automaticamente o caminho correto para os ficheiros estáticos -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+  <h1>Servidor Flask a funcionar!</h1>
+  <p>Esta página está a ser servida pelo Flask a partir da pasta <code>templates/</code>.</p>
+  <p>Experimenta visitar também:</p>
+  <ul>
+    <li><a href="/api/saudacao">/api/saudacao</a> — exemplo de resposta em JSON</li>
+    <li><a href="/api/saudacao/Maria">/api/saudacao/Maria</a> — exemplo com parâmetro na URL</li>
+  </ul>
+</body>
+</html>
